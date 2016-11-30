@@ -103,7 +103,7 @@ require "hello"
 
 describe "the hello function" do
   it "says hello" do
-    expect(hello).to eq("Hello!")
+    expect(hello).to eq("Hello!") #definition of method vs. expected
   end
 end
 
