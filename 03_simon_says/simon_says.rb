@@ -19,5 +19,7 @@ def first_word(input)
 end
 
 def titleize(input)
-	input.capitalize
+	input = input.split.map(&:capitalize).join(' ').gsub(/And/, 'and').gsub(/The/, 'the').gsub(/For/, 'for').gsub(/Over/, 'over')
+	input[0] = input[0].capitalize
+	input
 end
